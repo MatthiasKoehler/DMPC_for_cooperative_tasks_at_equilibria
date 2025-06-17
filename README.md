@@ -31,3 +31,5 @@ Terminal constraints for the quadrotor example are computed following the proced
 > J. Köhler, M. A. Müller, and F. Allgöwer, 'A nonlinear model predictive control framework using reference generic terminal ingredients,' *IEEE Trans. Autom. Control*, vol. 65 (3), 3576--3583, 2019. doi: [10.1109/TAC.2019.2949350](https://doi.org/10.1109/TAC.2019.2949350)
 
 This implementation uses [CasADi](https://web.casadi.org/docs/), [CVXPY](https://www.cvxpy.org/), and [IPOPT](https://github.com/coin-or/Ipopt).
+Moreover, [HSL MA97](https://www.hsl.rl.ac.uk/catalogue/hsl_ma97.html) is used in IPOPT. This can be disabled by adjusting the following option:
+> solver_options["linear_solver"] = 'ma97'
